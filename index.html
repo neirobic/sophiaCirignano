@@ -3,13 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='stylesheets/normalize.css'>
+  <link rel='stylesheet' href='stylesheets/layout.css'>
+  <link rel='stylesheet' href='stylesheets/style.css'>
   <title>Sophia Cirignano</title>
 </head>
 <body>
-<nav></nav>
-<header></header>
-<main></main>
-<footer></footer>
-  
+  <nav id='navBar'>
+    <ul>
+      <li>Home</li>
+      <li><a href="poems.html">Poems</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="workshops.html">Workshops</a></li>
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <section class='body-container' id='bodyContainer'>
+    <div class='hamburger-helper' id='hamburgerHelper'>
+        <img id='hamburger' src='assets/hamburgerIcon.svg' alt='click to open menu'>
+    </div>
+    <header>
+      <h1>Sophia Cirignano</h1>
+    </header>
+    <main>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, corrupti facere minima id recusandae nemo nostrum tempore veniam expedita assumenda alias aliquid officiis tempora. Recusandae similique distinctio sed dolorem impedit perspiciatis rerum commodi harum fugiat quae! Iusto modi aut in voluptates obcaecati ipsum odit vel, dolore, distinctio itaque, aliquam beatae!<p>
+    </main>
+    <footer>
+      <h5>todo</h5>
+      <form>
+          <input type="checkbox" id="item1" name="item1" checked>
+          <label for="item1">barebones nav html</label><br>
+
+          <input type="checkbox" id="item2" name="item2" checked>
+          <label for="item2">broad strokes layout w/ css</label><br>
+
+          <input type="checkbox" id="item3" name="item3">
+          <label for="item3">hamburger icon shows and hides nav</label><br>
+          <input type="checkbox" id="item3dot2" name="item4">
+          <label for="item3dot2">animate show/hide nav so it's fancy</label><br>
+          <input type="checkbox" id="item4" name="item4">
+          <label for="item4">set up css variables for text colours (should there be one css doc for styling and one for layout? i think so)</label><br>
+          <input type="checkbox" id="item5" name="item4">
+          <label for="item5">...</label><br>
+      </form>
+    </footer>
+  </section>
+  <script type='text/javascript' src='scripts/main.js'></script>
 </body>
 </html>

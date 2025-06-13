@@ -1,0 +1,47 @@
+/**{
+  border: 1px solid black;
+}*/
+
+html {
+    font-size: 62.5%; /* Set base font size to 62.5% of the default (16px),which is 10px, so 1rem = 10px - makes font size math easier */
+}
+
+body{
+  min-width: 95vw;
+  min-height: 95vh;
+  display:flex;
+}
+
+.body-container{
+  min-height: 95%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+nav{
+  display: flex;
+  padding: 3.2rem;
+  padding-left: 1.6rem;
+}
+
+.toggle-visibility{
+  display:none;
+}
+
+nav > ul {
+  list-style: none;
+  margin: 0;
+  margin-top: -1.6rem;
+  padding: 0;
+}
+
+nav > ul > li {
+  margin: 1.6rem 0;
+}
+
+#hamburger {
+  width: 20px;
+  padding: 2px;
+}
+

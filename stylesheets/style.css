@@ -1,0 +1,12 @@
+body{
+  font-size: 1.6rem;
+}
+
+header, footer, main, body > section > section {
+  padding: 1.6rem;
+/*1 rem = 10pt. this ^ makes it so there's 16pt of space between each of these containers and the content inside them*/
+}
+
+header {
+  text-align: center;
+}
