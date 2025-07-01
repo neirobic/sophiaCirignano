@@ -1,14 +1,32 @@
+@font-face {
+    font-family: 'The Directors';
+    src:local('The Directors') 
+        url('../assets/fonts/TheDirectorsItalic.woff2') format('woff2'),
+        url('../assets/fonts/TheDirectorsItalic.woff') format('woff'),
+        url('../assets/fonts/TheDirectorsItalic.ttf') format('truetype'),
+        url('../assets/fonts/TheDirectorsItalic.svg#TheDirectorsItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/** THIS SETS THE BASE FONT, FONT COLOUR, AND BACKGROUND COLOUR FOR THE WHOLE WEBSITE**/
 body{
   font-size: 1.6rem;
-  color: #757612;
+  color: #075CFB ;
   background-color: #CFC2E5;
+  font-family: "Jost", sans-serif;
 }
 
 nav{
   background-color: #4D53AE;
   color: #CAC444;
   margin: -1.6rem;
-  text-transform: uppercase;
+  font-family: 'The Directors';
+  font-weight: normal;
+  font-size: 2.0rem;
+  /**text-transform: uppercase;**/
 }
 
 nav a{
@@ -40,7 +58,12 @@ header {
 }
 
 h1 {
-  font-size: 6.0rem;
+  font-size: 8.0rem;
+}
+
+/**THE RULE BELOW SETS THE FONT FOR HEADERS **/
+h1, h2, h3 {
+    font-family: 'The Directors';
 }
 
 .gallery{
@@ -167,3 +190,5 @@ input[type="submit"]:active{
 .index-main p{
   max-width:50%;
 }
+
+
