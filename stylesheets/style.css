@@ -1,8 +1,7 @@
 /** this links the Directors font to your CSS file, so you can reference it with your CSS**/ 
 @font-face {
     font-family: 'The Directors';
-    src:local('The Directors') 
-        url('../assets/fonts/TheDirectorsItalic.woff2') format('woff2'),
+    src:url('../assets/fonts/TheDirectorsItalic.woff2') format('woff2'),
         url('../assets/fonts/TheDirectorsItalic.woff') format('woff'),
         url('../assets/fonts/TheDirectorsItalic.ttf') format('truetype'),
         url('../assets/fonts/TheDirectorsItalic.svg#TheDirectorsItalic') format('svg');
