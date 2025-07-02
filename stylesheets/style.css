@@ -1,3 +1,4 @@
+/** this links the Directors font to your CSS file, so you can reference it with your CSS**/ 
 @font-face {
     font-family: 'The Directors';
     src:local('The Directors') 
@@ -10,7 +11,6 @@
     font-display: swap;
 }
 
-
 /** THIS SETS THE BASE FONT, FONT COLOUR, AND BACKGROUND COLOUR FOR THE WHOLE WEBSITE**/
 body{
   font-size: 1.6rem;
@@ -19,30 +19,76 @@ body{
   font-family: "Jost", sans-serif;
 }
 
+/**THE RULE BELOW SETS THE FONT FOR HEADERS **/
+h1, h2, h3 {
+    font-family: 'The Directors';
+}
+
+/**SETS THE SIZE FOR THE HAMBURGER ICON**/
+#hamburger{
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+/**SETS THE BACKGROUND IMAGE FOR THE HOME PAGE**/
+#indexBodyContainer:after {
+  background-image:url("../assets/images/POETRY/Poetry2.gif"); /** <= the stuff in parentheses is what you change if you want to change the image. the stuff below just positions it **/
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 120vh;
+  opacity: 0.4; /** this sets the opacity. 1 is 100%. 0.4 is 40% **/ 
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  z-index:-1;
+}
+
+/**STYLING THE NAVIGATION BAR**/
 nav{
-  background-color: #4D53AE;
-  color: #CAC444;
+  background-color: #2967da;
+  color: #CAC444; /** text colour **/ 
   margin: -1.6rem;
-  font-family: 'The Directors';
+  font-family: 'The Directors', serif;
   font-weight: normal;
-  font-size: 2.0rem;
-  /**text-transform: uppercase;**/
+  font-size: 1.6rem;
+  padding: 3.2rem;
+  padding-left: 1.6rem;
+}
+
+nav ul {
+  font-family: 'Jost', sans-serif;
+  text-transform: uppercase;
+  list-style: none;
+  margin: 0;
+  margin-top: -1.6rem;
+  padding: 0;
+}
+
+nav > ul > li {
+  margin: 1.6rem 0;
 }
 
 nav a{
   color: #CAC444;
-  text-decoration: none;
+  text-decoration: none; /** this gets rid of the default underline for links**/
 }
 
-nav a:hover {
+nav a:hover, .selected {
   color: #FEFFDB;
 }
 
-.selected {
-  color: #FEFFDB;
+nav p {
+  color: white;
+  margin-top: -1.5rem;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+
 }
-
-
 
 header, footer, main, body > section > section {
   padding: 1.6rem;
@@ -58,137 +104,15 @@ header {
 }
 
 h1 {
-  font-size: 8.0rem;
+  font-size: 10.0rem;
 }
 
-/**THE RULE BELOW SETS THE FONT FOR HEADERS **/
-h1, h2, h3 {
-    font-family: 'The Directors';
+header h1 {
+  margin-top:-3rem;
 }
 
-.gallery{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.container {
-  max-width: 23%;
-  position: relative;
-  margin: 0.8rem;
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.container:hover .image {
-  opacity: 0.3
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
-.container:hover {
-  background-color: black;
-}
-
-/**contact form**/
-
-#contact-form-container{
-    margin-top: -120px;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10%;
-}
-
-.contact-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    font-size: 1.6rem;
-    letter-spacing: .1rem;
-}
-
-input,textarea {
-    font-size: 1.6rem;
-    height: 2em;
-    margin: .4em 0 1em 0;
-}
-
-textarea {
-    height: 10em;
-}
-
-input {
-    max-width: 400px;
-
-}
-
-input[type="submit"]{
-    align-self: flex-end;
-    width:100%;
-    height: 3em;
-    max-width:400px;
-    font-weight: 700;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
-    --webkit-user-select: text;
-    --webkit-appearance: none;
-
-}
-
-input[type="submit"]:hover{
-    background: rgb(255, 210, 95); 
-}
-
-input[type="submit"]:active{
-    background: rgb(196, 149, 32); 
-    border: 2px inset orange;
-}
-
-.recaptcha {
-    max-width: 100%;
-}
-
-.index-main{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.index-main p{
-  max-width:50%;
+.italic{
+  font-style: italic;
 }
 
 

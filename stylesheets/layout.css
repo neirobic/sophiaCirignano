@@ -6,6 +6,14 @@ html {
     font-size: 62.5%; /* Set base font size to 62.5% of the default (16px),which is 10px, so 1rem = 10px - makes font size math easier */
 }
 
+/*body, nav, main{
+  border: 3px solid red;
+}
+
+.body-container {
+  border: 3px solid green;
+}*/
+
 body{
   min-width: 95vw;
   min-height: 95vh;
@@ -17,41 +25,209 @@ body{
   width: 100%;
   display: flex;
   flex-direction: column;
+  min-height: 110vh;
 }
 
 
 nav{
   display: flex;
-  padding: 3.2rem;
-  padding-left: 1.6rem;
+  flex-direction: column;
 }
 
 .toggle-visibility{
   display:none;
 }
 
-nav > ul {
-  list-style: none;
-  margin: 0;
-  margin-top: -1.6rem;
-  padding: 0;
-}
+/**image galleries**/
 
-nav > ul > li {
-  margin: 1.6rem 0;
-}
-
-#hamburger {
-  width: 20px;
-  padding: 2px;
-}
-
-
-#bio-main {
+.gallery{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
 }
 
-#bio-main img {
-  margin: 1.6rem;
+header > p {
+  margin-top: -5rem;
+}
+
+
+/** this is for the hover-y thing in the poetry section**/
+
+.container {
+  /*max-width: 23%;*/
+  position: relative;
+  margin: 0.4rem !important;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  height: 350px;
+  width: auto;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.container:hover .image {
+  opacity: 0.3
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.container:hover {
+  background-color: black;
+}
+
+/**contact form**/
+
+#contact-form-container{
+    margin-top: -120px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.contact-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+}
+
+input,textarea {
+    font-size: 1.6rem;
+    height: 2em;
+    margin: .4em 0 1em 0;
+}
+
+textarea {
+    height: 10em;
+}
+
+input {
+    max-width: 400px;
+
+}
+
+input[type="submit"]{
+    align-self: flex-end;
+    width:100%;
+    height: 3em;
+    max-width:400px;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    --webkit-user-select: text;
+    --webkit-appearance: none;
+
+}
+
+input[type="submit"]:hover{
+    background: rgb(255, 210, 95); 
+}
+
+input[type="submit"]:active{
+    background: rgb(196, 149, 32); 
+    border: 2px inset orange;
+}
+
+.recaptcha {
+    max-width: 100%;
+}
+
+.index-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-main ul{
+  list-style: none;
+  max-width: 50%;
+  display: flex;
+  text-transform: uppercase;
+  margin-top: -5.0rem;
+}
+
+.index-main ul a {
+  text-decoration:none;
+  margin: 0.5rem;
+  color: #075CFB; 
+  text-decoration: none;
+}
+
+.index-main ul a:hover{
+  color: #0f357c;
+}
+
+/**for all images in galleries**/
+img{
+  object-fit: cover;
+  margin: 0.25rem;
+  width: 360px;
+  height: 270px;
+}
+
+/**Projects, mood page--technically all image galleries i think**/
+
+main {
+  /*border: 3px solid purple;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.gallery ~ p {
+  padding: 0.5% 11.5%;
+  /*border: 3px solid blue;*/
+}
+
+.gallery ~ p + p {
+  margin-top: -1.6rem;
+}
+
+.gallery{
+  /*border: 3px solid red;*/
+  margin-top: -6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 90%;
+  margin-bottom: 4rem;
+} 
+
+/**WORKSHOPS**/
+
