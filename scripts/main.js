@@ -5,4 +5,3 @@ hamburger.addEventListener('click', function() {
   navBar.classList.toggle('toggle-visibility'); 
     });
 
-console.log('script connected, yeehaw');
