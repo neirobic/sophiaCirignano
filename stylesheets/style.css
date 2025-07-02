@@ -116,3 +116,19 @@ header h1 {
 }
 
 
+/**MOBILE**/
+
+
+/**EVEN SMALLER MOBILE**/
+@media (max-width: 480px){
+  h1{
+    font-size: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  p, span, li, label, input {
+    font-size: 1.2rem;
+    margin: 1rem;
+  }
+
+}
