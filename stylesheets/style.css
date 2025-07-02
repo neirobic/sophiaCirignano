@@ -119,7 +119,7 @@ header h1 {
 @media (max-width: 480px) {
   h1{
     font-size: 8rem;
-    margin-bottom: 4rem;
+    /*margin-bottom: 4rem;*/
   }
 
   p, span, li, label, input {
@@ -135,8 +135,8 @@ header h1 {
 /**EVEN SMALLER MOBILE**/
 @media (max-width: 350px){
   h1{
-    font-size: 6rem;
-    margin-bottom: 5rem;
+    font-size: 8rem;
+    /*margin-bottom: 5rem;*/
   }
 
   p, span, li, label, input {
