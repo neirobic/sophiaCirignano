@@ -270,6 +270,10 @@ nav ul {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  font-size: 1.0rem; 
+}
+
+nav ul li {
   font-size: 1.0rem;
 }
 
