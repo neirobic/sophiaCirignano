@@ -2,10 +2,10 @@
 @font-face {
     font-family: 'The Directors';
     src:local('The Directors') 
-        url('../assets/fonts/TheDirectorsItalic.woff2') format('woff2'),
-        url('../assets/fonts/TheDirectorsItalic.woff') format('woff'),
-        url('../assets/fonts/TheDirectorsItalic.ttf') format('truetype'),
-        url('../assets/fonts/TheDirectorsItalic.svg#TheDirectorsItalic') format('svg');
+        url('/assets/fonts/TheDirectorsItalic.woff2') format('woff2'),
+        url('/assets/fonts/TheDirectorsItalic.woff') format('woff'),
+        url('/assets/fonts/TheDirectorsItalic.ttf') format('truetype'),
+        url('/assets/fonts/TheDirectorsItalic.svg#TheDirectorsItalic') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
