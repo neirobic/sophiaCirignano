@@ -133,7 +133,7 @@ header h1 {
 
 
 /**EVEN SMALLER MOBILE**/
-@media (max-width: 350px){
+/*@media (max-width: 350px){
   h1{
     font-size: 8rem;
     margin-bottom: 5rem;
@@ -146,4 +146,4 @@ header h1 {
   p {
     margin: 1rem;
   }
-}*/
+}*/*/
