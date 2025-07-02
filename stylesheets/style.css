@@ -41,7 +41,7 @@ h1, h2, h3 {
   top: 0;
   width: 100vw;
   height: 120vh;
-  opacity: 0.4; /** this sets the opacity. 1 is 100%. 0.4 is 40% **/ 
+  opacity: 0.3; /** this sets the opacity. 1 is 100%. 0.4 is 40% **/ 
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
