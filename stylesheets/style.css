@@ -120,9 +120,11 @@ header h1 {
   h1{
     font-size: 8rem;
     margin-bottom: 4rem;
-    max-width: 90vw;
-    text-wrap: wrap;
   }
+
+.h1-lil-mobile{
+  font-size: 5.0rem;
+}
 
   p, span, li, label, input {
     font-size: 1.4rem;
