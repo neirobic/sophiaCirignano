@@ -32,7 +32,9 @@ h1, h2, h3 {
 
 /**SETS THE BACKGROUND IMAGE FOR THE HOME PAGE**/
 #indexBodyContainer:after {
-  background-image:url("../assets/images/POETRY/Poetry2.gif"); /** <= the stuff in parentheses is what you change if you want to change the image. the stuff below just positions it **/
+  /*background-image:url("../assets/images/POETRY/Poetry2.gif");*/
+ /** <= the stuff in parentheses is what you change if you want to change the image. the stuff below just positions it **/
+  background-image:url("../assets/images/Background.gif");
   content: ' ';
   display: block;
   position: absolute;
@@ -40,12 +42,31 @@ h1, h2, h3 {
   top: 0;
   width: 100vw;
   height: 120vh;
-  opacity: 0.3; /** this sets the opacity. 1 is 100%. 0.4 is 40% **/ 
+  opacity: 0.9; /** this sets the opacity. 1 is 100%. 0.4 is 40% **/ 
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
   z-index:-1;
 }
+
+/**SETS THE BACKGROUND IMAGE FOR THE OTHER PAGES**/
+/*
+.body-container:after {
+  background-image:url("../assets/images/Background.gif"); /** <= the stuff in parentheses is what you change if you want to change the image. the stuff below just positions it **/
+/*  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9; /** this sets the opacity. 1 is 100%. 0.4 is 40% **/ 
+/*  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  z-index:-1;
+  background-attachment: fixed;
+}**/
 
 /**STYLING THE NAVIGATION BAR**/
 nav{
